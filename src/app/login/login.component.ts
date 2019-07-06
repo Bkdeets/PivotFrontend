@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UserService } from '../services/user.service'
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
       private router: Router,
-      private fb: FormBuilder) {
+      private fb: FormBuilder,
+      private userService: UserService ) {
 
   }
 
@@ -28,7 +30,7 @@ export class LoginComponent implements OnInit {
   }
 
   goHome() {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/home']);
   }
 
   onLogin() {
