@@ -1,5 +1,10 @@
 @tailwind base;
 
+body {
+   @apply bg-gray-100 m-0 appearance-none;
+   font-family: Arial;
+ }
+ 
 @tailwind components;
 
 @tailwind utilities;

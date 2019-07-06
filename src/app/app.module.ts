@@ -13,7 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { UserService } from './services/user.service'
+import { UserService } from './services/user.service';
+import { ProfileComponent } from './profile/profile.component'
 
 
 
@@ -24,7 +25,8 @@ import { UserService } from './services/user.service'
     DashboardComponent,
     SignupComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
