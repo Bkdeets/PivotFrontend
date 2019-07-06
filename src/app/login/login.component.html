@@ -1,0 +1,46 @@
+<div class="w-4/6 sm:w-2/6 md:w-2/6 lg:w-2/6 mx-auto pt-8 mt-8">
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-2 mb-4" (ngSubmit)="onLogin()" [formGroup]="userLogin">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+        Username
+      </label>
+      <input class="transition w-full sm:w-4/6 md:w-3/6 lg:w-3/6 focus:outline-0 border border-transparent focus:bg-white focus:border-gray-300 placeholder-gray-900 rounded bg-gray-200 py-2 px-2 appearance-none ds-input" formControlName="username" type="text" placeholder="Username">
+    </div>
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Password
+      </label>
+      <input class="transition w-full sm:w-4/6 md:w-3/6 lg:w-3/6 focus:outline-0 border border-transparent focus:bg-white focus:border-gray-300 placeholder-gray-900 rounded bg-gray-200 py-2 px-2 appearance-none ds-input" formControlName="password" type="password" placeholder="Password">
+    </div>
+    <div class="flex items-center justify-between p-2 flex-wrap">
+      <button type="submit" class="appearance-none border-none rounded-sm bg-teal-300 text-base px-4 py-1 hover:shadow hover:bg-teal-400 mr-4" [disabled]="loading">Submit</button>
+      <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 pt-2" href="#">
+        Forgot Password?
+      </a>
+    </div>
+    <hr class="appearance-none">
+    <div class="flex-col items-center pt-2 flex-wrap">
+      <p class="text-sm inline-block mx-auto align-baseline mr-1"> New to Surflogs? </p>
+      <a class="inline-block mx-auto align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 pt-2" [routerLink]="['/signup']">
+        Sign up here
+      </a>
+    </div>
+  </form>
+  <p class="text-center text-white text-xs">
+    &copy;2019 Surflogs
+  </p>
+  <!-- <div class="flex">
+    <div class="flex flex-col">
+      <img src="https://i.imgur.com/BtCP3kJ.png" class="icon" title="source: imgur.com" />
+      <h3 class="mx-auto text-center pt-1">Log surf sessions</h3>
+    </div>
+    <div class="flex flex-col">
+      <img src="https://i.imgur.com/ZeaCFq6.png" class="icon" title="source: imgur.com" />
+      <h3 class="mx-auto text-center pt-1">Analyze your surfing data</h3>
+    </div>
+    <div class="flex flex-col">
+      <img src="https://i.imgur.com/oMpqoUc.png" class="icon" title="source: imgur.com" />
+      <h3 class="mx-auto text-center pt-1">Track your favorite spots</h3>
+    </div>
+  </div> -->
+</div>
