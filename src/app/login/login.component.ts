@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-      this.loading = true;
       console.log(this.userLogin.value);
   }
 
