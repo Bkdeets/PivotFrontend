@@ -8,7 +8,8 @@
     "arrow-parens": false,
     "deprecation": {
       "severity": "warn"
-    },
+  },
+    "indent": [true, "tabs"],
     "import-blacklist": [
       true,
       "rxjs/Rx"

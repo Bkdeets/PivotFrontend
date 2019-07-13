@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { UserService } from '../services/user.service'
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -13,11 +13,11 @@ export class LoginComponent implements OnInit {
 
     userLogin: FormGroup;
     loading: Boolean;
+    // UserService = new UserService();
 
   constructor(
       private router: Router,
-      private fb: FormBuilder,
-      private userService: UserService ) {
+      private fb: FormBuilder) {
 
   }
 
@@ -26,15 +26,19 @@ export class LoginComponent implements OnInit {
           username: ['', Validators.required],
           password: ['', Validators.required]
       });
-      this.loading = false;
   }
 
   goHome() {
       this.router.navigate(['/home']);
   }
 
-  onLogin() {
-      console.log(this.userLogin.value);
-  }
+  // onLogin() {
+  //   let token = this.UserService.getUserToken(this.userLogin.value.username, this.userLogin.value.password);
+  //   if (token) {
+  //       // redirect to profile page of given user token
+  //   } else {
+  //       this.error = 'invalid creds bro';
+  //   }
+  // }
 
 }

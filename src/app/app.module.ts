@@ -12,6 +12,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthModule } from './auth/auth.module';
 
 import { UserService } from './services/user.service';
 import { ProfileComponent } from './profile/profile.component'
