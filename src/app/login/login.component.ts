@@ -32,6 +32,10 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/home']);
   }
 
+  onLogin() {
+      return
+  }
+
   // onLogin() {
   //   let token = this.UserService.getUserToken(this.userLogin.value.username, this.userLogin.value.password);
   //   if (token) {
