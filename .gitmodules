@@ -1,0 +1,3 @@
+[submodule "pivot-backend-api-wrapper"]
+	path = pivot-backend-api-wrapper
+	url = https://github.com/Bkdeets/pivot-backend-api-wrapper.git
