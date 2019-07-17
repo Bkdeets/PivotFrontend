@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
+import { Wrapper } from 'pivot-backend-api-wrapper/wrapper';
 
 @Component({
   selector: 'app-login',
@@ -33,16 +34,8 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-      return
+    w = new Wrapper();
+    console.log(w.login(this.userLogin['username'], this.userLogin['password']));
   }
-
-  // onLogin() {
-  //   let token = this.UserService.getUserToken(this.userLogin.value.username, this.userLogin.value.password);
-  //   if (token) {
-  //       // redirect to profile page of given user token
-  //   } else {
-  //       this.error = 'invalid creds bro';
-  //   }
-  // }
 
 }
