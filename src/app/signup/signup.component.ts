@@ -2,6 +2,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
+import { Wrapper } from 'pivot-backend-api-wrapper/wrapper';
+
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -22,7 +25,9 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
       this.userSignup = this.fb.group({
           username: ['', Validators.required],
-          password: ['', Validators.required]
+          password: ['', Validators.required],
+          password_val: ['', Validators.required],
+          email: ['', Validators.required]
       });
   }
 
@@ -30,8 +35,13 @@ export class SignupComponent implements OnInit {
       this.router.navigate(['/home']);
   }
 
-  onLogin() {
-      return
+  onSubmit() {
+      let w = new Wrapper();
+      let result = w.register(this.userSignup.value.username, this.userSignup.value.password);
+      console.log(result);
+      if (result.status == '200'){
+          this.router.navigate(['/login']);
+      }
   }
 
   // onLogin() {

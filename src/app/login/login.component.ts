@@ -34,8 +34,9 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
-    w = new Wrapper();
-    console.log(w.login(this.userLogin['username'], this.userLogin['password']));
+    let w = new Wrapper();
+    let result = w.login(this.userLogin.value.username, this.userLogin.value.password);
+    console.log(result);
   }
 
 }
