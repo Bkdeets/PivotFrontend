@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
-import { Wrapper } from 'pivot-backend-api-wrapper/wrapper';
+import { Wrapper } from 'src/pivot-backend-api-wrapper/wrapper';
 
 
 @Component({
