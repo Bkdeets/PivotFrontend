@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
           password: ['', Validators.required]
       });
       const routeParams = this.activeRoute.snapshot.params;
+      //
       if (routeParams.message){
           this.message = routeParams.message;
       }
