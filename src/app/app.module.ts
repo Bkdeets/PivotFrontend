@@ -21,6 +21,8 @@ import { LoggedinDirective } from './loggedin.directive'
 import { SessionService } from 'src/app/state/session.service';
 import { SessionStore } from 'src/app/state/session.store';
 import { SessionQuery } from 'src/app/state/session.query';
+import { ExploreComponent } from './explore/explore.component';
+import { LearnComponent } from './learn/learn.component';
 
 
 
@@ -33,7 +35,9 @@ import { SessionQuery } from 'src/app/state/session.query';
     NavigationComponent,
     FooterComponent,
     ProfileComponent,
-    LoggedinDirective
+    LoggedinDirective,
+    ExploreComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,

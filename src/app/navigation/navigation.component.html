@@ -1,21 +1,24 @@
 <nav class="flex items-center justify-between p-6 m-0 mb-6 order-first flex-no-wrap">
-  <div class="flex-start items-center flex-shrink-0 mr-6">
-    <span class="font-semibold text-2xl tracking-tight">Pivot</span>
-  </div>
-  <div class="lg:invisible md:invisible sm:invisible lg:order-none md:order-none sm:order-none order-last right-0 absolute">
-    <button class="appearance-none border-none bg-transparent flex items-center px-3 py-2 border rounded border-teal-400 hover:text-teal-200 hover:border-white">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-      </svg>
-    </button>
-  </div>
-  <div class="lg:visible md:visible sm:visible invisible lg:order-last md:order-last sm:order-last right-0">
-    <a [routerLink]="['/dashboard']" class="no-underline mt-4 inline-block text-black lg:mt-0 hover:text-teal-200 mr-4 min-w-0">
-      Dashboard
-    </a>
-    <a href="#r" class="no-underline mt-4 inline-block text-black lg:mt-0 hover:text-teal-200 min-w-0">
-      Profile
-    </a>
-  </div>
+	<div class="flex-start items-center flex-shrink-0 mr-6">
+		<span class="font-semibold text-2xl tracking-tight">Pivot</span>
+	</div>
+	<div class="lg:invisible md:invisible sm:invisible lg:order-none md:order-none sm:order-none order-last right-0 absolute">
+		<button class="appearance-none border-none bg-transparent flex items-center px-3 py-2 border rounded border-teal-400 hover:text-teal-200 hover:border-white">
+			<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+				<title>Menu</title>
+				<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+			</svg>
+		</button>
+	</div>
+	<div class="lg:visible md:visible sm:visible invisible lg:order-last md:order-last sm:order-last right-0">
+		<a [routerLink]="['/explore']" class="no-underline mt-4 inline-block text-black lg:mt-0 hover:text-teal-200 mr-4 min-w-0">
+			Explore
+		</a>
+        <a [routerLink]="['/learn']" class="no-underline mt-4 inline-block text-black lg:mt-0 hover:text-teal-200 mr-4 min-w-0">
+			Learn
+		</a>
+		<a [routerLink]="['/dashboard']" class="no-underline mt-4 inline-block text-black lg:mt-0 hover:text-teal-200 mr-4 min-w-0">
+			Dashboard
+		</a>
+	</div>
 </nav>
