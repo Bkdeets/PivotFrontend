@@ -14,6 +14,7 @@ export class SignupComponent implements OnInit {
 
     userSignup: FormGroup;
     loading: Boolean;
+    errorMessage: String;
     // UserService = new UserService();
 
   constructor(
@@ -35,12 +36,17 @@ export class SignupComponent implements OnInit {
       this.router.navigate(['/home']);
   }
 
-  onSubmit() {
+  async onSubmit() {
       let w = new Wrapper();
-      let result = w.register(this.userSignup.value.username, this.userSignup.value.password);
+      let result = await w.register(this.userSignup.value.username, this.userSignup.value.password);
       console.log(result);
-      if (result.status == '200'){
-          this.router.navigate(['/login']);
+      if (!result.isError){
+          this.router.navigate([
+              '/auth',
+              { message: 'Successfully Registered!' }
+          ]);
+      } else {
+          this.errorMessage = result.response;
       }
   }
 

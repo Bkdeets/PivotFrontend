@@ -25,6 +25,14 @@ button {
   @apply appearance-none;
 }
 
+.bg-error {
+    background-color: #FF9898;
+}
+
+.bg-success {
+    background-color: #CBF4C8;
+}
+
 
  /**
   * This injects any component classes registered by plugins.
