@@ -15,7 +15,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from './auth/auth.module';
 
 import { UserService } from './services/user.service';
-import { ProfileComponent } from './profile/profile.component'
+import { ProfileComponent } from './profile/profile.component';
+import { LoggedinDirective } from './loggedin.directive'
+
+import { SessionService } from 'src/app/state/session.service';
+import { SessionStore } from 'src/app/state/session.store';
+import { SessionQuery } from 'src/app/state/session.query';
 
 
 
@@ -27,14 +32,20 @@ import { ProfileComponent } from './profile/profile.component'
     SignupComponent,
     NavigationComponent,
     FooterComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoggedinDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+      UserService,
+      SessionService,
+      SessionStore,
+      SessionQuery
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
