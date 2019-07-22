@@ -33,6 +33,18 @@ button {
     background-color: #CBF4C8;
 }
 
+.bg-tertiary {
+    background-color: #b5d3eb;
+}
+
+.bg-light {
+    @apply bg-gray-100 m-0 appearance-none;
+}
+
+.bg-dark {
+   background-color: #2f404d;
+}
+
 
  /**
   * This injects any component classes registered by plugins.

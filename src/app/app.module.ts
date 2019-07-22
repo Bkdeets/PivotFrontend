@@ -23,6 +23,8 @@ import { SessionStore } from 'src/app/state/session.store';
 import { SessionQuery } from 'src/app/state/session.query';
 import { ExploreComponent } from './explore/explore.component';
 import { LearnComponent } from './learn/learn.component';
+import { StrategyComponent } from './strategy/strategy.component';
+import { StrategyCardComponent } from './strategy-card/strategy-card.component';
 
 
 
@@ -37,7 +39,9 @@ import { LearnComponent } from './learn/learn.component';
     ProfileComponent,
     LoggedinDirective,
     ExploreComponent,
-    LearnComponent
+    LearnComponent,
+    StrategyComponent,
+    StrategyCardComponent
   ],
   imports: [
     BrowserModule,
