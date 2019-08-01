@@ -1,3 +1,3 @@
-[submodule "pivot-backend-api-wrapper"]
-	path = pivot-backend-api-wrapper
-	url = https://github.com/Bkdeets/pivot-backend-api-wrapper.git
+[submodule "tideline-backend-api-wrapper"]
+	path = tideline-backend-api-wrapper
+	url = https://github.com/TidelineAP/tideline-backend-api-wrapper.git
