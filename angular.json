@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Pivot": {
+    "Tideline": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -20,7 +20,7 @@
             "customWebpackConfig": {
               "path": "./webpack.config.js"
             },
-            "outputPath": "dist/Pivot",
+            "outputPath": "dist/Tideline",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "Pivot:build"
+            "browserTarget": "Tideline:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Pivot:build:production"
+              "browserTarget": "Tideline:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Pivot:build"
+            "browserTarget": "Tideline:build"
           }
         },
         "test": {
@@ -110,7 +110,7 @@
         }
       }
     },
-    "Pivot-e2e": {
+    "Tideline-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -119,11 +119,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Pivot:serve"
+            "devServerTarget": "Tideline:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Pivot:serve:production"
+              "devServerTarget": "Tideline:serve:production"
             }
           }
         },
@@ -139,5 +139,5 @@
       }
     }
   },
-  "defaultProject": "Pivot"
+  "defaultProject": "Tideline"
 }
