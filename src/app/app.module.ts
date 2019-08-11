@@ -25,6 +25,8 @@ import { ExploreComponent } from './explore/explore.component';
 import { LearnComponent } from './learn/learn.component';
 import { StrategyComponent } from './strategy/strategy.component';
 import { StrategyCardComponent } from './strategy-card/strategy-card.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
+import { LoginNavigationComponent } from './login-navigation/login-navigation.component';
 
 
 
@@ -41,7 +43,9 @@ import { StrategyCardComponent } from './strategy-card/strategy-card.component';
     ExploreComponent,
     LearnComponent,
     StrategyComponent,
-    StrategyCardComponent
+    StrategyCardComponent,
+    FrontpageComponent,
+    LoginNavigationComponent
   ],
   imports: [
     BrowserModule,
