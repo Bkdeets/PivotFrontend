@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Strategy } from 'src/app/strategy/strategy'
+import { Strategy } from 'src/app/strategy/strategy';
+import { Router } from '@angular/router';
+
 
 @Component({
 	selector: 'app-active-strategy-card',
@@ -9,9 +11,14 @@ import { Strategy } from 'src/app/strategy/strategy'
 export class ActiveStrategyCardComponent implements OnInit {
 	@Input() strategy: Strategy;
 
-	constructor() { }
+	constructor(private router: Router) { }
 
 	ngOnInit() {
+
+	}
+
+	routeToDetail(){
+		this.router.navigate(['/strategy/1']);
 	}
 
 }

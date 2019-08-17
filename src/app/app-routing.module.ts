@@ -6,7 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FrontpageComponent } from './frontpage/frontpage.component'
-
+import { StrategyDetailComponent } from './strategy-detail/strategy-detail.component'
 
 const routes: Routes = [
     { path: '', redirectTo: 'about', pathMatch: 'full'},
@@ -14,7 +14,8 @@ const routes: Routes = [
     { path: 'auth', component: LoginComponent},
     { path: 'dashboard/:username', component: DashboardComponent},
     { path: 'signup', component: SignupComponent},
-    { path: 'profile/:id', component: ProfileComponent}
+    { path: 'profile/:id', component: ProfileComponent},
+    { path: 'strategy/:id', component: StrategyDetailComponent}
 ]
 
 @NgModule({
