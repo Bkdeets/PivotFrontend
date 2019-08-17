@@ -13,11 +13,11 @@
 @tailwind base;
 
 .bg-base {
-    @apply
+    @apply bg-gray-100
 }
 
 body {
-   @apply bg-gray-100 m-0 appearance-none;
+   @apply bg-base m-0 appearance-none;
    font-family: Arial;
  }
 
@@ -28,8 +28,6 @@ body {
 button {
   @apply appearance-none;
 }
-
-
 
 .bg-primary {
     background-color: white;
