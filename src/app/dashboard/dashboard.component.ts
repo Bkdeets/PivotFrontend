@@ -53,10 +53,6 @@ export class DashboardComponent implements OnInit {
 				pl: 5.95
 			}
 		];
-
-		document.body.classList.add("bg-dark-0");
-		document.getElementById('nav').classList.add("text-white");
-
 	}
 
     onLogout(){

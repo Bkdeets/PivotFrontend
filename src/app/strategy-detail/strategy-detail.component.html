@@ -1,8 +1,28 @@
-<div class="mx-auto flex flex-no-wrap">
-  <div class="mx-auto w-2/6 p-5 shadow-md rounded bg-tertiary">
-        <div class="bg-tertiary shadow-md rounded px-2 pt-2 pb-2 mb-4">
-            <h3> {{strategy.name}} </h3>
-            <p class="text-sm"> {{strategy.description}} </p>
-        </div>
-  </div>
+<div class="h-screen mb-10 bg-primary mx-auto w-5/6 shadow rounded">
+	<div class="mx-auto mt-5 text-center">
+		<h1 class="mb-2 pt-10 text-2xl"> <b>{{strategy.name}}</b></h1>
+	</div>
+
+	<div class="mx-auto flex flex-no-wrap">
+		<div class="mx-auto w-3/6 p-5 rounded bg-primary">
+			<p class="text-sm"> {{strategy.description}} </p>
+		</div>
+	</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mx-auto px-10 text-center">
+        <p> [put a gif chart here of simulated trading] </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="flex justify-between px-10 mx-auto">
+        <p>Average Returns</p>
+        <p>Max Profit</p>
+        <p>Max Drawdown</p>
+        <p>Subscription Fee</p>
+    </div>
 </div>

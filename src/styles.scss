@@ -12,6 +12,10 @@
  */
 @tailwind base;
 
+.bg-base {
+    @apply
+}
+
 body {
    @apply bg-gray-100 m-0 appearance-none;
    font-family: Arial;
@@ -23,6 +27,12 @@ body {
 
 button {
   @apply appearance-none;
+}
+
+
+
+.bg-primary {
+    background-color: white;
 }
 
 .bg-error {
@@ -50,7 +60,7 @@ button {
 }
 
 .bg-dark-2 {
-    background-color: #0C1013;
+    background-color: #12181D;
 }
 
 .bg-dark-3 {
