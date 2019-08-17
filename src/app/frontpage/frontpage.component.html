@@ -1,7 +1,6 @@
-<app-login-navigation></app-login-navigation>
 <!-- Lots of visuals -->
-<div class="front-bg h-screen pt-10 pl-10">
-	<div class="ml-5">
+<div class="h-screen pt-10 mb-10">
+	<div class="ml-5 pl-10">
 		<h1 class="mb-2 mt-10 text-5xl"> <b>Tideline</b> Automated Investing </h1>
 		<div class="ml-10">
 			<h3 class="text-2xl">Pre-made and customizable algorithmic trading strategies.</h3>
@@ -9,43 +8,15 @@
 		</div>
 	</div>
 
-	<div>
-		<button (click)="login()"> login </button>
-		<button (click)="logout()"> logout </button>
+	<div class="mx-auto flex items-center my-10">
+		<button
+		class="mx-auto appearance-none border-none rounded-sm bg-tertiary text-base px-4 py-1 shadow hover:bg-teal-400" [routerLink]="['/signup']">
+			Create your account
+		</button>
 	</div>
-</div>
-
-
-
-
-<!-- Main offerings 1 -->
-<div>
-	<div>
-		<h1> Automated Trading </h1>
-	</div>
-</div>
-
-<!-- Main offerings 2 -->
-<div>
 
 	<div>
-		<h1> Profitable Strategies </h1>
+
 	</div>
-</div>
 
-
-<!-- Main offerings 3 -->
-<div>
-
-	<div>
-		<h1> Customization and Backtesting </h1>
-	</div>
-</div>
-
-
-<div>
-
-	<div>
-		<a href=#>Create your account</a>
-	</div>
 </div>

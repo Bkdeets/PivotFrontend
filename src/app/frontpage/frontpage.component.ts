@@ -21,12 +21,15 @@ export class FrontpageComponent implements OnInit {
 	svgAnimate() {}
 
 	login() {
-		var username = "britton";
-		this.router.navigate(['/dashboard/{{username}}']);
+
 	}
 
 	logout() {
 		this.router.navigate(['/auth']);
+	}
+
+	signup(){
+
 	}
 
 }

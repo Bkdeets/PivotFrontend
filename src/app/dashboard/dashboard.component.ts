@@ -54,7 +54,7 @@ export class DashboardComponent implements OnInit {
 			}
 		];
 
-		document.body.classList.add("bg-dark");
+		document.body.classList.add("bg-dark-0");
 		document.getElementById('nav').classList.add("text-white");
 
 	}

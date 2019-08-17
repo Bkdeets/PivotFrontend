@@ -51,7 +51,19 @@ export class LoginComponent implements OnInit {
 
   async onLogin() {
     let w = new Wrapper();
-    let result = await w.login(this.userLogin.value.username, this.userLogin.value.password);
+
+    // prod
+    // let result = await w.login(this.userLogin.value.username, this.userLogin.value.password);
+
+    //mock
+    let result: any = {
+        'response' : {
+            'data' : {
+                'token': 'imatokenyall!'
+            }
+        },
+        'isError': false
+    }
     if (!result.isError) {
         this.authService.login({
             username: this.userLogin.value.username,
