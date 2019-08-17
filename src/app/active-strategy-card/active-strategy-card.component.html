@@ -1,0 +1,10 @@
+<div class="bg-tertiary shadow-md rounded px-2 pt-2 pb-2 mb-4"
+    [ngClass]="{
+        'bg-profit': strategy.pl > 0,
+        'bg-loss': strategy.pl < 0
+    }">
+	<div class="flex justify-between">
+		<h3 class="first"> {{strategy.name}} </h3>
+		<p class="text-small last pill"> {{strategy.pl}}%</p>
+	</div>
+</div>

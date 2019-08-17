@@ -14,8 +14,11 @@ export class LoginNavigationComponent implements OnInit {
       private authService: SessionService) { }
 
   ngOnInit() {
+
   }
 
-  onLogout(){}
+  onLogout(){
+      
+  }
 
 }

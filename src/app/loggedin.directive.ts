@@ -16,6 +16,7 @@ export class LoggedinDirective implements OnDestroy {
   ngOnInit() {
     this.subscription = this.authQuery.isLoggedIn$.subscribe(isLoggedIn => {
       this.viewContainer.clear();
+      isLoggedIn = true;
       if (isLoggedIn) {
         if (this.showIfLoggedIn) {
           this.viewContainer.createEmbeddedView(this.templateRef);

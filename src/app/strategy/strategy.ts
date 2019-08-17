@@ -1,4 +1,5 @@
 export class Strategy {
-    name: String;
-    description: String;
+    name: string;
+    description: string;
+    pl: number;
 }

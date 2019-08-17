@@ -14,11 +14,17 @@ export class SessionQuery extends Query<SessionState> {
        this.select(state => toBoolean(state.token)).subscribe({
            next: value => this._isLoggedIn = value
        });
-       return this._isLoggedIn;
+       //mock for fe dev
+       return true;
+
+       // prod code
+       //return this._isLoggedIn;
    }
 
    getUsername() {
        if(this.isLoggedIn()){
+
+           // prod code
            return this.select(state => state.username);
        }
    }
