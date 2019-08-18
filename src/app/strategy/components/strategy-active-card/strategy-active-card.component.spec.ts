@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StrategyComponent } from './strategy.component';
+import { StrategyActiveCardComponent } from './strategy-active-card.component';
 
-describe('StrategyComponent', () => {
-  let component: StrategyComponent;
-  let fixture: ComponentFixture<StrategyComponent>;
+describe('StrategyActiveCardComponent', () => {
+  let component: StrategyActiveCardComponent;
+  let fixture: ComponentFixture<ActiveStrategyCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StrategyComponent ]
+      declarations: [ StrategyActiveCardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StrategyComponent);
+    fixture = TestBed.createComponent(StrategyActiveCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

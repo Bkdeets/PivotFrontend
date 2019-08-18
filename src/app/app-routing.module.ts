@@ -6,7 +6,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FrontpageComponent } from './frontpage/frontpage.component'
-import { StrategyDetailComponent } from './strategy-detail/strategy-detail.component'
+import { StrategyDetailComponent } from './strategy/components/strategy-detail/strategy-detail.component'
+import { ExploreComponent } from './explore/explore.component';
+import { StrategyCategoryDetailComponent } from './strategy/components/strategy-category-detail/strategy-category-detail.component'
 
 const routes: Routes = [
     { path: '', redirectTo: 'about', pathMatch: 'full'},
@@ -15,7 +17,9 @@ const routes: Routes = [
     { path: 'dashboard/:username', component: DashboardComponent},
     { path: 'signup', component: SignupComponent},
     { path: 'profile/:id', component: ProfileComponent},
-    { path: 'strategy/:id', component: StrategyDetailComponent}
+    { path: 'strategy/:id', component: StrategyDetailComponent},
+    { path: 'explore', component: ExploreComponent},
+    { path: 'category/:id', component: StrategyCategoryDetailComponent},
 ]
 
 @NgModule({

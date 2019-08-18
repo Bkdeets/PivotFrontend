@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Strategy } from 'src/app/strategy/strategy'
+import { Strategy } from 'src/app/strategy/objects/strategy.object'
 
 @Component({
 	selector: 'app-strategy-card',

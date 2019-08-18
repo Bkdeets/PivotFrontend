@@ -1,36 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { SessionQuery } from 'src/app/state/session.query';
-import { SessionService } from 'src/app/state/session.service';
-import { Router } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core';
 import { Strategy } from 'src/app/strategy/objects/strategy.object';
+import { StrategyCategory } from 'src/app/strategy/objects/strategy-category.object';
+
 
 
 @Component({
-	selector: 'app-dashboard',
-	templateUrl: './dashboard.component.html',
-	styleUrls: ['./dashboard.component.scss']
+	selector: 'app-strategy-category-detail',
+	templateUrl: './strategy-category-detail.component.html',
+	styleUrls: ['./strategy-category-detail.component.scss']
 })
-export class DashboardComponent implements OnInit {
-
-    username: String;
+export class StrategyCategoryDetailComponent implements OnInit {
+	category: StrategyCategory;
 	strategies: Strategy[];
 
-	constructor(
-		private authQuery: SessionQuery,
-        private router: Router,
-        private authService: SessionService
-    ) {
-
-	}
+	constructor() { }
 
 	ngOnInit() {
-        if (!this.authQuery.isLoggedIn()){
-            this.router.navigate(['/auth']);
-        } else {
-            this.authQuery.getUsername().subscribe({
-                next: username => this.username = username
-            });
-        }
+		this.category = {
+			name: 'Trend Following',
+			number: 10,
+			description: 'Trend following is an investment or trading strategy which tries to take advantage of long, medium and/or short-term moves that seem to play out in various markets.'
+		}
 		this.strategies = [
 			{
 				name: 'MA Cross',
@@ -54,10 +44,5 @@ export class DashboardComponent implements OnInit {
 			}
 		];
 	}
-
-    onLogout(){
-        this.authService.logout();
-        this.router.navigate(['/auth']);
-    }
 
 }

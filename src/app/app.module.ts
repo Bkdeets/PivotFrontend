@@ -23,12 +23,13 @@ import { SessionStore } from 'src/app/state/session.store';
 import { SessionQuery } from 'src/app/state/session.query';
 import { ExploreComponent } from './explore/explore.component';
 import { LearnComponent } from './learn/learn.component';
-import { StrategyComponent } from './strategy/strategy.component';
-import { StrategyCardComponent } from './strategy-card/strategy-card.component';
+import { StrategyCardComponent } from './strategy/components/strategy-card/strategy-card.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { LoginNavigationComponent } from './login-navigation/login-navigation.component';
-import { ActiveStrategyCardComponent } from './active-strategy-card/active-strategy-card.component';
-import { StrategyDetailComponent } from './strategy-detail/strategy-detail.component';
+import { StrategyActiveCardComponent } from './strategy/components/strategy-active-card/strategy-active-card.component';
+import { StrategyDetailComponent } from './strategy/components/strategy-detail/strategy-detail.component';
+import { StrategyCategoryCardComponent } from './strategy/components/strategy-category-card/strategy-category-card.component';
+import { StrategyCategoryDetailComponent } from './strategy/components/strategy-category-detail/strategy-category-detail.component';
 
 
 
@@ -44,12 +45,13 @@ import { StrategyDetailComponent } from './strategy-detail/strategy-detail.compo
     LoggedinDirective,
     ExploreComponent,
     LearnComponent,
-    StrategyComponent,
     StrategyCardComponent,
     FrontpageComponent,
     LoginNavigationComponent,
-    ActiveStrategyCardComponent,
-    StrategyDetailComponent
+    StrategyActiveCardComponent,
+    StrategyDetailComponent,
+    StrategyCategoryCardComponent,
+    StrategyCategoryDetailComponent
   ],
   imports: [
     BrowserModule,

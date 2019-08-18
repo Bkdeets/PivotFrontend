@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Strategy } from 'src/app/strategy/strategy'
+import { Strategy } from 'src/app/strategy/objects/strategy.object'
 
 @Component({
   selector: 'app-strategy-detail',
@@ -10,7 +10,7 @@ export class StrategyDetailComponent implements OnInit {
     strategy: Strategy;
 
   constructor() {
-      this.strategy = 
+      this.strategy =
           {
               name: 'MA Cross',
               description: 'Trades by going long when the short term moving average of asset prices crosses the long term moving average.',
