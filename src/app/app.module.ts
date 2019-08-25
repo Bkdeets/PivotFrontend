@@ -30,40 +30,46 @@ import { StrategyActiveCardComponent } from './strategy/components/strategy-acti
 import { StrategyDetailComponent } from './strategy/components/strategy-detail/strategy-detail.component';
 import { StrategyCategoryCardComponent } from './strategy/components/strategy-category-card/strategy-category-card.component';
 import { StrategyCategoryDetailComponent } from './strategy/components/strategy-category-detail/strategy-category-detail.component';
+import { PercentPillComponent } from './percent-pill/percent-pill.component';
+import { ChartPerformanceComponent } from './chart-performance/chart-performance.component';
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    DashboardComponent,
-    SignupComponent,
-    NavigationComponent,
-    FooterComponent,
-    ProfileComponent,
-    LoggedinDirective,
-    ExploreComponent,
-    LearnComponent,
-    StrategyCardComponent,
-    FrontpageComponent,
-    LoginNavigationComponent,
-    StrategyActiveCardComponent,
-    StrategyDetailComponent,
-    StrategyCategoryCardComponent,
-    StrategyCategoryDetailComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
-  providers: [
+   declarations: [
+      AppComponent,
+      LoginComponent,
+      DashboardComponent,
+      SignupComponent,
+      NavigationComponent,
+      FooterComponent,
+      ProfileComponent,
+      LoggedinDirective,
+      ExploreComponent,
+      LearnComponent,
+      StrategyCardComponent,
+      FrontpageComponent,
+      LoginNavigationComponent,
+      StrategyActiveCardComponent,
+      StrategyDetailComponent,
+      StrategyCategoryCardComponent,
+      StrategyCategoryDetailComponent,
+      PercentPillComponent,
+      ChartPerformanceComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      ReactiveFormsModule
+   ],
+   providers: [
       UserService,
       SessionService,
       SessionStore,
       SessionQuery
-  ],
-  bootstrap: [AppComponent]
+   ],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }

@@ -2,13 +2,6 @@
     (click)="routeToDetail()">
 	<div class="flex justify-between items-center">
 		<h3 class="first"> {{strategy.name}} </h3>
-		<div
-            class="text-xs last rounded-full bg-dark-0 text-white p-1 px-2"
-            [ngClass]="{
-                'bg-profit': strategy.pl > 0,
-                'bg-loss': strategy.pl < 0
-            }">
-            {{strategy.pl}}%
-        </div>
+		<app-percent-pill [strategy]="strategy"></app-percent-pill>
 	</div>
 </div>

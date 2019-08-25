@@ -26,6 +26,7 @@
     "@angular/router": "~8.1.1",
     "@datorama/akita": "^4.7.0",
     "@datorama/akita-cli": "^6.0.1",
+    "anychart": "^8.7.0",
     "axios": "^0.19.0",
     "core-js": "^2.5.4",
     "express": "^4.17.1",

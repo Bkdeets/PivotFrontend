@@ -1,6 +1,42 @@
-<div class="flex flex-no-wrap w-full bg-primary shadow">
-    <div class="w-2/6 mr-10 p-4 shadow-md rounded right-0 absolute bg-primary">
-        <h2 class="mx-auto text-center text-xl py-5"> Strategies </h2>
+<div class="flex flex-no-wrap w-full">
+    <div class="flex-row w-4/6 h-2/6 pb-10 pt-4 ml-10 bg-primary rounded shadow">
+        <div class="flex flex-initial w-full ml-5 mb-2 content-end">
+            <h2 class="text-xl px-3"> Portfolio </h2>
+            <app-percent-pill class="px-3" [strategy]="strategies[0]"></app-percent-pill>
+        </div>
+        <app-chart-performance class="w-full h-full"></app-chart-performance>
+        <div class="flex flex-wrap w-full mb-2 mt-5 content-center p-2 bg-primary rounded shadow">
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+            <p class="px-2 bg-primary rounded mx-2 my-2">Stuff: 25</p>
+        </div>
+    </div>
+    <div class="w-1/4 h-vh-85 mr-10 p-4 shadow-md rounded right-0 absolute bg-primary">
+        <h2 class="mx-auto text-center text-xl pb-5 pt-2"> Active Strategies </h2>
         <div class="flex-row items-center">
             <div *ngFor="let strategy of strategies; index as i">
                 <app-strategy-active-card [strategy]="strategies[i]"></app-strategy-active-card>

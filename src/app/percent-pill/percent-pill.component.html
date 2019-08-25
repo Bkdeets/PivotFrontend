@@ -1,0 +1,9 @@
+<div
+	class="text-xs last rounded-full bg-dark-0 text-white p-1 px-2"
+	[ngClass]="{
+		'bg-profit': strategy.pl > 0,
+		'bg-loss': strategy.pl < 0
+	}"
+>
+	{{ strategy.pl }}%
+</div>
