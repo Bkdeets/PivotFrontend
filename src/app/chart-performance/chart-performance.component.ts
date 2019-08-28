@@ -83,6 +83,7 @@ export class ChartPerformanceComponent implements OnInit {
 		this.chart = anychart.line();
         var series = this.chart.line(data)
         this.chart.container(this.container.nativeElement);
+        this.chart.background().fill("#f7fafc");
         this.chart.draw();
 	}
 }
